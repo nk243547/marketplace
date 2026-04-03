@@ -26,8 +26,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-#ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['10.155.49.230', 'localhost', '127.0.0.1']
+
+from decouple import config
+ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
