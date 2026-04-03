@@ -1,0 +1,37 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environment (your env folder)
+env/
+venv/
+ENV/
+
+# Database
+db.sqlite3
+*.sqlite3
+
+# Media (user uploaded files)
+media/
+
+# Environment variables / secrets
+.env
+.env.local
+
+# Django static files
+staticfiles/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
