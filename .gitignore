@@ -8,7 +8,7 @@ __pycache__/
 dist/
 build/
 
-# Virtual environment (your env folder)
+# Virtual environment
 env/
 venv/
 ENV/
